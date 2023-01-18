@@ -1,4 +1,4 @@
--- By Reavik and Player_rs V1
+-- By Reavik and Player_rs V1.1
 
 local cb = peripheral.find("chatBox")
 if cb == nil then print("chatBox no found") end
@@ -47,8 +47,9 @@ end
 local function _downloadList()
     if not fs.exists(nameBot) then
         fs.makeDir(nameBot)
+        print("d")
     end
-    shell.run("wgethttps://raw.githubusercontent.com/Reaviik/EteriumRobsonStore/main/PriceTable.lua "..nameBot.."/PriceTable.lua")
+    shell.run("wgethttps://raw.githubusercontent.com/Reaviik/EteriumRobsonStore/main/PriceTable.lua nameBot../PriceTable.lua")
 end
 
 -- Main
