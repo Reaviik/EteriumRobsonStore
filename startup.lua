@@ -2,11 +2,11 @@
 
 local cb = peripheral.find("chatBox")
 if cb == nil then print("chatBox no found") end
-local modem = peripheral.find("modem")
+local modem = peripheral.wrap("modem")
 if modem == nil then print("modem not found") end
 modem.open(7777, 98)
 
-local nameBot = "Robsom"
+local nameBot = "Robson"
 local woner = "Reavik"
 local remove = false
 
