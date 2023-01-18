@@ -1,4 +1,4 @@
--- By Reavik and Player_rs V2.2s
+-- By Reavik, Player_rs and HarryKaray V3.0s
 
 local cb = peripheral.find("chatBox")
 if cb == nil then print("chatBox no found") end
