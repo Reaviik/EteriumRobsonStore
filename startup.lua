@@ -1,8 +1,8 @@
--- By Reavik and Player_rs V1.1
+-- By Reavik and Player_rs V1.2
 
 local cb = peripheral.find("chatBox")
 if cb == nil then print("chatBox no found") end
-local modem = peripheral.wrap("modem")
+local modem = peripheral.find("modem")
 if modem == nil then print("modem not found") end
 modem.open(7777, 98)
 
@@ -49,7 +49,7 @@ local function _downloadList()
         fs.makeDir(nameBot)
         print("d")
     end
-    shell.run("wgethttps://raw.githubusercontent.com/Reaviik/EteriumRobsonStore/main/PriceTable.lua nameBot../PriceTable.lua")
+    shell.run("wgethttps://raw.githubusercontent.com/Reaviik/EteriumRobsonStore/main/PriceTable.lua Robson/PriceTable.lua")
 end
 
 -- Main
