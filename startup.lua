@@ -1,4 +1,4 @@
--- By Reavik and Player_rs V1.5
+-- By Reavik and Player_rs V1.5s
 
 local cb = peripheral.find("chatBox")
 if cb == nil then print("chatBox no found") end
@@ -91,7 +91,7 @@ while true do
                 local precouni =  addPoints(v.preco)
                 local precopack =  addPoints(v.preco*64)
                 local precoinve =  addPoints(v.preco*2304)
-                sendMessage(("\n[%s]: \n%s/unidade \n%s/pack \n%s/inventario \nAndar: %s"):format(v.name:sub(2), precouni, precopack, precoinve, v.andar), player)
+                sendMessage(("\n[%s]: \n%s/unidade \n%s/pack \n%s/inventario \nAndar: %s"):format(v.name, precouni, precopack, precoinve, v.andar), player)
                 sleep(1)
             end
         else
